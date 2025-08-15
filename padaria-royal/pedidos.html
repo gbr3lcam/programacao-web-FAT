@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<body>
+
+    <h1>📝🎂 Formulário de Pedidos Especiais</h1>
+
+    <br />
+
+    <form action="index.html">
+        
+        <label style="font-weight: 700; font-size: large;">Suas informações</label> <br /> <br />
+        <label for="nome">Nome Completo*</label>
+        <input type="text" name="nome" id="nome" required />
+
+        <br /> <br />
+
+        <label for="telefone">Telefone*</label>
+        <input type="tel" id="telefone" name="telefone"
+        pattern="\(\d{2}\)\s\d{2}\s\d{5}-\d{4}"
+        required \>
+
+        <br /> <br />
+
+        <label for="email">Email*</label>
+        <input type="email" name="email" id="email" required />
+
+        <br /> <br /> <br />
+
+        <label style="font-weight: 700; font-size: large;">Selecionar tipo de produto</label> <br /> <br />
+        <input type="radio" name="tipo" id="tipo-1" value="bolo">
+        <label for="bolo">Bolo</label>
+
+        <input type="radio" name="tipo" id="tipo-2" value="torta">
+        <label for="torta">Torta</label>
+
+        <input type="radio" name="tipo" id="tipo-3" value="eclair">
+        <label for="eclair">Eclair</label>
+
+        <br /> <br /> <br />
+
+        <label for="sabor" style="font-weight: 700; font-size: large;">Selecione o sabor do recheio</label> <br /> <br>
+        <select name="sabor" id="sabor">
+            <option value="">Selecione</option>
+            <option value="choco">Chocolate</option>
+            <option value="moran">Morango</option>
+            <option value="vanila">Baunilia</option>
+        </select>
+
+        <br><br><br>
+
+        <label style="font-weight: 700; font-size: large;">Selecione o tamanho</label> <br><br>
+        <input type="radio" name="tamanho" id="tamanho-1" value="p">
+        <label for="p">Pequeno</label>
+
+        <input type="radio" name="tamanho" id="tamanho-2" value="m">
+        <label for="m">Medio</label>
+
+        <input type="radio" name="tamanho" id="tamanho-3" value="g">
+        <label for="g">Grande</label>
+
+        <br><br><br>
+
+        <label for="data" style="font-weight: 700; font-size: large;">Data de entrega*</label> <br><br>
+        <input type="date" name="data" id="data" required />
+
+        <br><br><br>
+
+        <label for="obs" style="font-weight: 700; font-size: large;">Observações especiais</label> <br><br>
+        <textarea id="obs" name="obs" required \>
+        </textarea>
+
+        <br><br><br>
+
+        <label style="font-weight: 700; font-size: large;">Orçamento máximo</label> <br><br>
+        <label for="orcamento">R$</label>
+        <input type="number" name="orcamento" id="orcamento" min="50" max="200">
+
+        <br><br><br>
+
+        <input type="submit" value="Enviar"> <input type="reset" value="Resetar">
+
+    </form>
+
+</body>
+</html>

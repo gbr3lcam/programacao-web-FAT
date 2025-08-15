@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/9e90c990cd.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header> <!--Parte superior do site contendo o logo da padaria e um slogan simples, com links de redes sociais-->
+        <div class="header">
+            <div id="logoheader">
+                <a href="index.html" alt="Início">
+                    <img src="images/logo/logotipo.png" alt="Logotipo Padaria Royal" width="250"/>
+                </a>
+                <p>Qualidade que encanta</p>
+            </div>
+
+            <div id="social">
+                <a href="https://www.instagram.com/gbr3lcam/" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://x.com/gbr3lcam" target="_blank">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+                <a href="https://github.com/gbr3lcam" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <nav>
+            <div class="topnav">
+                <a href="contato.html" target="_blank" alt="formulário de contato">CONTATO</a>
+                <a href="feedback.html" target="_blank" alt="formulário de feedback">FEEDBACK</a>
+                <a href="cadastro.html" target="_blank" alt="formulário de cadastro">CADASTRO</a>
+            </div>    
+        </nav>
+    </header>
+
+        <div class="form-background">
+            <div class="form-container">
+                <form action="index.html"> 
+                    <label for="" style="font-weight: 900; font-size: large;">Formulário de cadastro</label> <br><br>       
+                    <label for="" style="font-weight: 700; font-size: large;">Suas informações</label> <br><br>
+                    <label for="nome">Nome Completo*</label>
+                    <input type="text" name="nome" id="nome" required />
+
+                    <br><br>
+
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" required />
+
+                    <br><br>
+
+                    <label for="telefone">Telefone*</label>
+                    <input type="tel" name="telefone" id="telefone" required />
+
+                    <br><br>
+
+                    <label for="data">Aniversario</label>
+                    <input type="date" name="data" id="data" />
+
+                    <br><br><br>
+
+                    <label for="" style="font-weight: 700; font-size: large;">Endereço</label> <br><br>
+                    <label for="rua">Rua*</label>
+                    <input type="text" name="rua" id="rua" required />
+
+                    <br><br>
+
+                    <label for="num">Número*</label>
+                    <input type="number" name="num" id="num" required />
+
+                    <br><br>
+
+                    <label for="bairro">Bairro*</label>
+                    <input type="text" name="bairro" id="bairro" required />
+
+                    <br><br>
+
+                    <label for="cep">CEP*</label>
+                    <input type="number" name="cep" id="cep" pattern="[0-9]{5}-[0-9]{3}" required />
+
+                    <br><br><br>
+
+                    <label for="" style="font-weight: 700; font-size: large;">Produtos favoritos</label> <br><br>
+                    <input type="checkbox" name="pref" id="pref-1">
+                    <label for="pref-1">🥖 Pães artesanais</label>
+
+                    <input type="checkbox" name="pref" id="pref-2">
+                    <label for="pref-2">🍰 Doces e bolos</label>
+
+                    <input type="checkbox" name="pref" id="pref-3">
+                    <label for="pref-3">🥐 Salgados</label>
+
+                    <input type="checkbox" name="pref" id="pref-4">
+                    <label for="pref-4">🥗 Produtos diet/light</label>
+
+                    <input type="checkbox" name="pref" id="pref-5">
+                    <label for="pref-5">🌾 Produtos integrais</label>
+
+                    <br><br><br>
+
+                    <input type="checkbox" name="termos" id="termos" required />
+                    <label for="termos">Aceito os termos de uso</label>
+
+                    <input type="checkbox" name="emailcheck" id="emailcheck" required />
+                    <label for="termos">Aceito receber atualizações por email</label>
+
+                    <br><br>
+
+                    <input type="submit" value="Enviar"> <input type="reset" value="resetar">
+
+                </form>
+            </div>
+        </div>
+</body>
+</html>

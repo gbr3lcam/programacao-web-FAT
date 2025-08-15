@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/9e90c990cd.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Feedback</title>
+</head>
+<body>
+    <header> <!--Parte superior do site contendo o logo da padaria e um slogan simples, com links de redes sociais-->
+        <div class="header">
+            <div id="logoheader">
+                <a href="index.html" alt="Início">
+                    <img src="images/logo/logotipo.png" alt="Logotipo Padaria Royal" width="250"/>
+                </a>
+                <p>Qualidade que encanta</p>
+            </div>
+
+            <div id="social">
+                <a href="https://www.instagram.com/gbr3lcam/" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://x.com/gbr3lcam" target="_blank">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+                <a href="https://github.com/gbr3lcam" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <nav>
+            <div class="topnav">
+                <a href="contato.html" target="_blank" alt="formulário de contato">CONTATO</a>
+                <a href="feedback.html" target="_blank" alt="formulário de feedback">FEEDBACK</a>
+                <a href="cadastro.html" target="_blank" alt="formulário de cadastro">CADASTRO</a>
+            </div>    
+        </nav>
+    </header>
+
+    <div class="form-background">
+        <div class="form-container">
+            <form action="index.html">
+                <label style="font-weight: 700; font-size: large;">Suas informações</label> <br><br>
+            
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" />
+            
+                <br><br>
+            
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+            
+                <br><br><br>
+            
+                <label for="produto" style="font-weight: 700; font-size: large;">Selecione o serviço/produto:  </label>
+                <select name="produto" id="produto" required >
+
+                    <option>Selecione</option>
+                    <option value="">🥖 Pães tradicionais</option>
+                    <option value="">🍰 Doces e bolos</option>
+                    <option value="">🥐 Salgados</option>
+                    <option value="">👥 Atendimento</option>
+                    <option value="">🏠 Ambiente</option>
+                    <option value="">💲 Preços</option>
+                
+                </select>
+            
+                <br><br><br>
+            
+                <label style="font-weight: 700; font-size: large;">Avaliação geral</label> <br><br>
+                <input type="radio" name="nota" id="nota-1" value="excelente" required />
+                <label for="excelente">🌟 Excelente</label>
+            
+                <input type="radio" name="nota" id="nota-2" value="bom">
+                <label for="bom">👍 Bom</label>
+            
+                <input type="radio" name="nota" id="nota-3" value="regular">
+                <label for="regular">😐 Regular</label>
+            
+                <input type="radio" name="nota" id="nota-4" value="ruim">
+                <label for="ruim">👎 Ruim</label>
+            
+                <br><br><br>
+            
+                <label for="coment" style="font-weight: 700; font-size: large;">Insira comentario</label> <br><br>
+                <textarea name="coment" id="coment" placeholder="Insira comentário aqui"></textarea>
+            
+                <br><br><br>
+            
+                <input type="checkbox" name="recomendaria" id="recomendaria">
+                <label for="recomendaria">Recomendaria para amigos?</label>
+            
+                <input type="checkbox" name="autorizacao" id="autorizacao">
+                <label for="autorizacao">Autoriza publicação do seu depoimento?</label>
+            
+                <br><br><br>
+            
+                <input type="submit" value="Enviar"> <input type="reset" value="Resetar">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
